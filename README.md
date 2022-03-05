@@ -19,7 +19,7 @@ Let’s start by understanding how standard Elo works with two players. There ar
 ![](./img/4.png)
 ![](./img/2.png)
 
-** ELO was invented for only 1v1 matches it does account for multiplayer rating change **
+** ELO was invented for only 1v1 matches it does NOT account for multiplayer rating change **
 
 ## ELO implementation for 5v5 (or multiplayer games)
 
@@ -32,3 +32,7 @@ Let’s use standard Elo to compute all pairwise expected scores using the formu
 ![](./img/3.png)
 
 Now for 5v5 we replace `N(N-1)/2` with `5` for each player of `team 1` with every player of `team 2`
+
+## References
+
+1. https://towardsdatascience.com/developing-a-generalized-elo-rating-system-for-multiplayer-games-b9b495e87802
